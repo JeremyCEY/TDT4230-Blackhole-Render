@@ -1,0 +1,1110 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 24.3.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Command line invocation:
+          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+      
+      User defaults from command line:
+          IDEPackageSupportUseBuiltinSCM = YES
+      
+      ComputeTargetDependencyGraph
+      note: Building targets in dependency order
+      note: Target dependency graph (1 target)
+          Target 'CompilerIdC' in project 'CompilerIdC' (no dependencies)
+      
+      GatherProvisioningInputs
+      
+      CreateBuildDescription
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+      
+      Build description signature: c6ac3842e0c00a8c60803abab9ca3690
+      Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/./XCBuildData/c6ac3842e0c00a8c60803abab9ca3690.xcbuilddata
+      CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.xcodeproj
+          builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+      
+      ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.xcodeproj
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+      
+      CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/EagerLinkingTBDs/Debug
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.xcodeproj
+          builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/EagerLinkingTBDs/Debug
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC-d9d24303ac0ea36fa2bc7f98aeea5fe3-VFS/all-product-headers.yaml
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.xcodeproj
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC-d9d24303ac0ea36fa2bc7f98aeea5fe3-VFS/all-product-headers.yaml
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/Entitlements.plist (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/Entitlements.plist
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+      -target arm64-apple-macos15.2 -fpascal-strings -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g '-fvisibility=hidden' -iquote /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.DependencyMetadataFileList (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.DependencyMetadataFileList
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
+      
+      ProcessProductPackaging "" /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          
+          Entitlements:
+          
+          {
+          "com.apple.application-identifier" = "";
+          "com.apple.security.get-task-allow" = 1;
+      }
+          
+          builtin-productPackagingUtility -entitlements -format xml -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent
+      
+      ProcessProductPackagingDER /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent.der (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          /usr/bin/derq query -f xml -i /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent.der --raw
+      
+      CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          
+          Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+          
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CMakeCCompilerId.c -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
+      
+      Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC normal (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Os -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC
+      
+      PhaseScriptExecution Run\\ Script /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          /bin/sh -c /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+      ARCHS=arm64
+      
+      CodeSign /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          
+          Signing Identity:     "Sign to Run Locally"
+          
+          /usr/bin/codesign --force --sign - --entitlements /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.xcent --timestamp\\=none --generate-entitlement-der /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC
+      
+      RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC
+          builtin-RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC
+      
+      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
+      note: Run script build phase 'Run Script' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'CompilerIdC' from project 'CompilerIdC')
+      ** BUILD SUCCEEDED **
+      
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Command line invocation:
+          /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+      
+      User defaults from command line:
+          IDEPackageSupportUseBuiltinSCM = YES
+      
+      ComputeTargetDependencyGraph
+      note: Building targets in dependency order
+      note: Target dependency graph (1 target)
+          Target 'CompilerIdCXX' in project 'CompilerIdCXX' (no dependencies)
+      
+      GatherProvisioningInputs
+      
+      CreateBuildDescription
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c++ -c /dev/null
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+      
+      ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+      
+      Build description signature: 849c62c6da151230418a47237b43db19
+      Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/./XCBuildData/849c62c6da151230418a47237b43db19.xcbuilddata
+      ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.xcodeproj
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+      
+      CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.xcodeproj
+          builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+      
+      CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/EagerLinkingTBDs/Debug
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.xcodeproj
+          builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/EagerLinkingTBDs/Debug
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX-cab83bf49ed2df1b1ab81a78cb182d1a-VFS/all-product-headers.yaml
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.xcodeproj
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX-cab83bf49ed2df1b1ab81a78cb182d1a-VFS/all-product-headers.yaml
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
+      -target arm64-apple-macos15.2 -fpascal-strings -Os -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g '-fvisibility=hidden' -fvisibility-inlines-hidden -iquote /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/Entitlements.plist (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/Entitlements.plist
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.DependencyMetadataFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.DependencyMetadataFileList
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
+      
+      WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+      
+      ProcessProductPackaging "" /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          
+          Entitlements:
+          
+          {
+          "com.apple.application-identifier" = "";
+          "com.apple.security.get-task-allow" = 1;
+      }
+          
+          builtin-productPackagingUtility -entitlements -format xml -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent
+      
+      ProcessProductPackagingDER /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent.der (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          /usr/bin/derq query -f xml -i /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent.der --raw
+      
+      CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          
+          Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
+          
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
+      
+      Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX normal (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Os -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -no_adhoc_codesign -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX
+      
+      PhaseScriptExecution Run\\ Script /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          /bin/sh -c /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+      GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+      ARCHS=arm64
+      
+      CodeSign /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          
+          Signing Identity:     "Sign to Run Locally"
+          
+          /usr/bin/codesign --force --sign - --entitlements /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.xcent --timestamp\\=none --generate-entitlement-der /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX
+      
+      RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+          cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX
+          builtin-RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX
+      
+      warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+      note: Run script build phase 'Run Script' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
+      ** BUILD SUCCEEDED **
+      
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k"
+      binary: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k'
+        
+        Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_1400d -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        Command line invocation:
+            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_1400d -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        
+        User defaults from command line:
+            HideShellScriptEnvironment = YES
+            IDEPackageSupportUseBuiltinSCM = YES
+        
+        ComputeTargetDependencyGraph
+        note: Building targets in dependency order
+        note: Target dependency graph (1 target)
+            Target 'cmTC_1400d' in project 'CMAKE_TRY_COMPILE' (no dependencies)
+        
+        GatherProvisioningInputs
+        
+        CreateBuildDescription
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+        
+        Build description signature: 4887b7f50d9d960d79162fa3cb1d1154
+        Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/XCBuildData/4887b7f50d9d960d79162fa3cb1d1154.xcbuilddata
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+        
+        ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/cmTC_1400d.DependencyMetadataFileList (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/cmTC_1400d.DependencyMetadataFileList
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+        -target arm64-apple-macos15.2 -fpascal-strings -O0 '-DCMAKE_INTDIR="Debug"' -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+        
+        CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            
+            Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+            
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -v -Wl,-v @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macos15.2
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debug-info-kind=standalone -dwarf-version=5 -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k -ferror-limit 19 -fmacro-backtrace-limit=0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        
+        Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d normal (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macos15.2
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        
+        RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k
+            builtin-RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d
+        
+        ** BUILD SUCCEEDED **
+        
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_1400d -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: [Command line invocation:]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_1400d -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: []
+        ignore line: [User defaults from command line:]
+        ignore line: [    HideShellScriptEnvironment = YES]
+        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
+        ignore line: []
+        ignore line: [ComputeTargetDependencyGraph]
+        ignore line: [note: Building targets in dependency order]
+        ignore line: [note: Target dependency graph (1 target)]
+        ignore line: [    Target 'cmTC_1400d' in project 'CMAKE_TRY_COMPILE' (no dependencies)]
+        ignore line: []
+        ignore line: [GatherProvisioningInputs]
+        ignore line: []
+        ignore line: [CreateBuildDescription]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details]
+        ignore line: []
+        ignore line: [Build description signature: 4887b7f50d9d960d79162fa3cb1d1154]
+        ignore line: [Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/XCBuildData/4887b7f50d9d960d79162fa3cb1d1154.xcbuilddata]
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+        ignore line: []
+        ignore line: [ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/cmTC_1400d.DependencyMetadataFileList (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/cmTC_1400d.DependencyMetadataFileList]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp]
+        ignore line: [-target arm64-apple-macos15.2 -fpascal-strings -O0 '-DCMAKE_INTDIR="Debug"' -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+        ignore line: []
+        ignore line: [CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k]
+        ignore line: [    ]
+        ignore line: [    Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp]
+        ignore line: [    ]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -v -Wl -v @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macos15.2]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debug-info-kind=standalone -dwarf-version=5 -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k -ferror-limit 19 -fmacro-backtrace-limit=0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/CMakeCCompilerABI.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/include"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources-normal/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/DerivedSources"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: []
+        ignore line: [Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d normal (in target 'cmTC_1400d' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macos15.2]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+                  to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-no_deduplicate] ==> ignore
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.2.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-O0] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug/cmTC_1400d] ==> ignore
+          arg [-L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug] ==> dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug]
+          arg [-reproducible] ==> ignore
+          arg [-filelist] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d.LinkFileList] ==> ignore
+          arg [-object_path_lto] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o] ==> obj [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o]
+          arg [-no_deduplicate] ==> ignore
+          arg [-v] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-dependency_info] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_dependency_info.dat] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [-F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug] ==> ignore
+        linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug], skipping non-system directory
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug], skipping non-system directory
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug], skipping non-system directory
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/EagerLinkingTBDs/Debug], skipping non-system directory
+        collapse framework dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/Debug], skipping non-system directory
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-O0ij6k/build/cmTC_1400d.build/Debug/Objects-normal/arm64/cmTC_1400d_lto.o]
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR"
+      binary: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR'
+        
+        Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7469c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        Command line invocation:
+            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7469c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        
+        User defaults from command line:
+            HideShellScriptEnvironment = YES
+            IDEPackageSupportUseBuiltinSCM = YES
+        
+        ComputeTargetDependencyGraph
+        note: Building targets in dependency order
+        note: Target dependency graph (1 target)
+            Target 'cmTC_7469c' in project 'CMAKE_TRY_COMPILE' (no dependencies)
+        
+        GatherProvisioningInputs
+        
+        CreateBuildDescription
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c++ -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        Build description signature: ac66fcc446fa12e1ab23e5b512ad35a7
+        Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/XCBuildData/ac66fcc446fa12e1ab23e5b512ad35a7.xcbuilddata
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+        
+        ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/cmTC_7469c.DependencyMetadataFileList (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/cmTC_7469c.DependencyMetadataFileList
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
+        -target arm64-apple-macos15.2 '-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG' -fpascal-strings -O0 '-DCMAKE_INTDIR="Debug"' -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList
+        
+        CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            
+            Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp
+            
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -v -Wl,-v @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macos15.2
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debug-info-kind=standalone -dwarf-version=5 -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR -ferror-limit 19 -fmacro-backtrace-limit=0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64"
+        ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug (framework directory)
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        
+        Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c normal (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macos15.2
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug
+        	/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        
+        RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR
+            builtin-RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c
+        
+        ** BUILD SUCCEEDED **
+        
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7469c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: [Command line invocation:]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_7469c -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
+        ignore line: []
+        ignore line: [User defaults from command line:]
+        ignore line: [    HideShellScriptEnvironment = YES]
+        ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
+        ignore line: []
+        ignore line: [ComputeTargetDependencyGraph]
+        ignore line: [note: Building targets in dependency order]
+        ignore line: [note: Target dependency graph (1 target)]
+        ignore line: [    Target 'cmTC_7469c' in project 'CMAKE_TRY_COMPILE' (no dependencies)]
+        ignore line: []
+        ignore line: [GatherProvisioningInputs]
+        ignore line: []
+        ignore line: [CreateBuildDescription]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c++ -c /dev/null]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details]
+        ignore line: []
+        ignore line: [ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null]
+        ignore line: []
+        ignore line: [Build description signature: ac66fcc446fa12e1ab23e5b512ad35a7]
+        ignore line: [Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/XCBuildData/ac66fcc446fa12e1ab23e5b512ad35a7.xcbuilddata]
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+        ignore line: []
+        ignore line: [ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache]
+        ignore line: []
+        ignore line: [CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/CMAKE_TRY_COMPILE.xcodeproj]
+        ignore line: [    builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/cmTC_7469c.DependencyMetadataFileList (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/cmTC_7469c.DependencyMetadataFileList]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp]
+        ignore line: [-target arm64-apple-macos15.2 '-D_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG' -fpascal-strings -O0 '-DCMAKE_INTDIR="Debug"' -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+        ignore line: []
+        ignore line: [WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR]
+        ignore line: [    write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList]
+        ignore line: []
+        ignore line: [CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR]
+        ignore line: [    ]
+        ignore line: [    Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp]
+        ignore line: [    ]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -v -Wl -v @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/82b82416624d2658e5098eb0a28c15c5-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macos15.2]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debug-info-kind=standalone -dwarf-version=5 -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_DEBUG -D "CMAKE_INTDIR=\\"Debug\\"" -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64 -I /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR -ferror-limit 19 -fmacro-backtrace-limit=0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/include"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources-normal/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources/arm64"]
+        ignore line: [ignoring nonexistent directory "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/DerivedSources"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug (framework directory)]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: []
+        ignore line: [Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c normal (in target 'cmTC_7469c' from project 'CMAKE_TRY_COMPILE')]
+        ignore line: [    cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR]
+        ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macos15.2]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+                  to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -mllvm -enable-linkonceodr-outlining -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug -reproducible -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList -object_path_lto /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-no_deduplicate] ==> ignore
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.2.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-O0] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug/cmTC_7469c] ==> ignore
+          arg [-L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug] ==> dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug]
+          arg [-reproducible] ==> ignore
+          arg [-filelist] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c.LinkFileList] ==> ignore
+          arg [-object_path_lto] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o] ==> obj [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o]
+          arg [-no_deduplicate] ==> ignore
+          arg [-v] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-dependency_info] ==> ignore
+          arg [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_dependency_info.dat] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [-F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug] ==> ignore
+        linker tool for 'CXX': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug;/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug], skipping non-system directory
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug], skipping non-system directory
+        collapse library dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug], skipping non-system directory
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/EagerLinkingTBDs/Debug], skipping non-system directory
+        collapse framework dir [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug] ==> [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/Debug], skipping non-system directory
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: [/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-HLzOiR/build/cmTC_7469c.build/Debug/Objects-normal/arm64/cmTC_7469c_lto.o]
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/homebrew/lib/cmake/glfw3/glfw3Config.cmake:2 (find_dependency)"
+      - "CMakeLists.txt:12 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5"
+      binary: "/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/jeremy/Downloads/Interstellar/build"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5'
+        
+        Run Build Command(s): /usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_e0837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        Command line invocation:
+            /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_e0837 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+        
+        User defaults from command line:
+            HideShellScriptEnvironment = YES
+            IDEPackageSupportUseBuiltinSCM = YES
+        
+        ComputeTargetDependencyGraph
+        note: Building targets in dependency order
+        note: Target dependency graph (1 target)
+            Target 'cmTC_e0837' in project 'CMAKE_TRY_COMPILE' (no dependencies)
+        
+        GatherProvisioningInputs
+        
+        CreateBuildDescription
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -x c -c /dev/null
+        
+        ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+        
+        Build description signature: fdeb0217cc4daba1470bbf7ef62bae99
+        Build description path: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/XCBuildData/fdeb0217cc4daba1470bbf7ef62bae99.xcbuilddata
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug
+        
+        ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/CMAKE_TRY_COMPILE.xcodeproj
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -o /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache
+        
+        CreateBuildDirectory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/EagerLinkingTBDs/Debug
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/CMAKE_TRY_COMPILE.xcodeproj
+            builtin-create-build-directory /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/EagerLinkingTBDs/Debug
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/cmTC_e0837.DependencyMetadataFileList (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/cmTC_e0837.DependencyMetadataFileList
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/cmTC_e0837.LinkFileList (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/cmTC_e0837.LinkFileList
+        
+        WriteAuxiliaryFile /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            write-file /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+        -target arm64-apple-macos15.2 -fpascal-strings -O0 '-DCMAKE_INTDIR="Debug"' -DCMAKE_HAVE_LIBC_PTHREAD -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -g -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug/include -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/DerivedSources-normal/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/DerivedSources/arm64 -I/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/DerivedSources -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug
+        
+        CompileC /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/src.o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/src.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            
+            Using response file: /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+            
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /var/folders/h0/hvsq02px5vnczw8jvl1dlppw0000gn/C/com.apple.DeveloperTools/16.2-16C5032a/Xcode/SDKStatCaches.noindex/macosx15.2-24C94-1dd28740b163f220e3e9b9fd2a542f53.sdkstatcache -fmessage-length\\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body @/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/src.d --serialize-diagnostics /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/src.dia -c /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/src.c -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/src.o
+        
+        Ld /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug/cmTC_e0837 normal (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos15.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -O0 -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/EagerLinkingTBDs/Debug -L/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/EagerLinkingTBDs/Debug -F/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug -filelist /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/cmTC_e0837.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/cmTC_e0837_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/build/cmTC_e0837.build/Debug/Objects-normal/arm64/cmTC_e0837_dependency_info.dat -o /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug/cmTC_e0837
+        
+        RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug/cmTC_e0837 (in target 'cmTC_e0837' from project 'CMAKE_TRY_COMPILE')
+            cd /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5
+            builtin-RegisterExecutionPolicyException /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/CMakeScratch/TryCompile-71QuP5/Debug/cmTC_e0837
+        
+        ** BUILD SUCCEEDED **
+        
+        
+      exitCode: 0
+...
