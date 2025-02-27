@@ -9,6 +9,10 @@ list(APPEND CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR})
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Add the ImGui include directory
+include_directories(${PROJECT_SOURCE_DIR}/imgui)
+
+# find_package(imgui REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(glm REQUIRED)
@@ -17,10 +21,14 @@ file(GLOB SRC_FILES
   "${PROJECT_SOURCE_DIR}/src/*.h"
   "${PROJECT_SOURCE_DIR}/src/*.cpp"
   "${PROJECT_SOURCE_DIR}/src/*.c"
-  "${PROJECT_SOURCE_DIR}/src/*.cc")
+  "${PROJECT_SOURCE_DIR}/src/*.cc"
+  "${PROJECT_SOURCE_DIR}/imgui/*.h"  # Add ImGui source files
+  "${PROJECT_SOURCE_DIR}/imgui/*.cpp")  # Add ImGui source files
+
   
 add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES})
 
+# target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE imgui::imgui)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE glfw)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE GLEW::GLEW)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE glm::glm)

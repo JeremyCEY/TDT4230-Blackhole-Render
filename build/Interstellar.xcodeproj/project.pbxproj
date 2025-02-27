@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		0C584C3BD9A28AA0C9D9CB55 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9360A95F6FF840A3B2F11E8D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 6FCAF292B7B943E69083E5C8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				4018F6229E6F188D8739AC39 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,13 +20,13 @@
 		};
 		55BD753A26A5E136FFBA4FE3 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BB72136CE7C44D289786F3AA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = A7FC758A530E457AB1DD039F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				7A0E1868DF1367665EF856FF /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				51A29BD4279042639A45C606 /* PBXTargetDependency */,
-				0C5A4F77A85947ED87651C50 /* PBXTargetDependency */,
+				5614032A5ADE4E20BF38B05D /* PBXTargetDependency */,
+				B570B685B4C2415D8B4ACFE6 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,69 +34,85 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0E4B22AAF4DB44A1A73597B5 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */ = {isa = PBXBuildFile; fileRef = 230CD1ED95924BC3A74F4E87 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */; };
-		277B2564C8AA4E9881FC2D9B /* /Users/jeremy/Downloads/Interstellar/src/texture.h */ = {isa = PBXBuildFile; fileRef = 4F62A388C74743DE94C9D953 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */; };
-		36B5DA22E45F4C4696975A40 /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */ = {isa = PBXBuildFile; fileRef = 74F0F0C524794DFDBDAB00D1 /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */; };
-		3BB978C309774C658B2514E8 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */ = {isa = PBXBuildFile; fileRef = 2EDD1429CFD04E2D8FA28077 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */; };
-		55EA3028888E4A6AA47ABAF2 /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 990F81F47A924C1E93C940AC /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */; };
-		6E0C1D55AC664303A4109255 /* /Users/jeremy/Downloads/Interstellar/src/render.h */ = {isa = PBXBuildFile; fileRef = DF05A7000A2C42999A56632A /* /Users/jeremy/Downloads/Interstellar/src/render.h */; };
-		734A311810AA4248A374C871 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */ = {isa = PBXBuildFile; fileRef = CF30AEE5FAC946B4B2EDD1D4 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */; };
-		8399E2ABEE614F42BB0BF5A7 /* /Users/jeremy/Downloads/Interstellar/src/shader.h */ = {isa = PBXBuildFile; fileRef = 105BB5DF6D7E4FABB08EAB5C /* /Users/jeremy/Downloads/Interstellar/src/shader.h */; };
-		9165AC73DF824CD59D40BEC8 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 4582E833C29B4CA29F0ABCB2 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */; };
-		D111C15D878142BCB09B3CF3 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */ = {isa = PBXBuildFile; fileRef = 986CCE0E5BB847EFA7556091 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */; };
-		DA90C38F57FE44B4A224CB1D /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = 5812F7D847194095B8DB9BEB /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */; };
-		EFECB7F63EEE43C6B0A58267 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */ = {isa = PBXBuildFile; fileRef = 6C7406A1BD9F48159BFA37A3 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */; };
+		0E22C08313FB4EA0808D2C9C /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */ = {isa = PBXBuildFile; fileRef = 759D83C817A94ECB9B11BB15 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */; };
+		15E2A84E7ACB40B0B117DED5 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */ = {isa = PBXBuildFile; fileRef = 5C986AC601104E9FA8CF14B6 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */; };
+		162C8028D91041DFB76104CA /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */ = {isa = PBXBuildFile; fileRef = FE0CDD47A43B45219F4B4C36 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */; };
+		208C963C72154E61A5E2D96F /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */ = {isa = PBXBuildFile; fileRef = FCA05457181242D794D56D4F /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */; };
+		225800F9C17F4B0280495E35 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.h */ = {isa = PBXBuildFile; fileRef = F0D21AA946D54667BA173C3C /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.h */; };
+		26AD4B17C1A643A8A2EB8F8E /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.cpp */ = {isa = PBXBuildFile; fileRef = 82BF3B0B050E4554836846D0 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.cpp */; };
+		352966ED1DF44BF3A993829C /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3_loader.h */ = {isa = PBXBuildFile; fileRef = 0F3AE9F2FAD2496DBF76A52F /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3_loader.h */; };
+		3FC5A32C58D641F38BC99021 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 2160F993B8024EFFB81A0F44 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */; };
+		418913AE178048E0B86572E1 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */ = {isa = PBXBuildFile; fileRef = DCFBF99A98D04E8EA571B627 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */; };
+		41A0DA8091B34E7C8D244950 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_textedit.h */ = {isa = PBXBuildFile; fileRef = BCBDFCC64F444CA482E48D19 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_textedit.h */; };
+		4737483B4DF34636919099FD /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXBuildFile; fileRef = A8811F0558CC4A2E8A0D25D0 /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */; };
+		4B2D870D25994F90920E6C3C /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9E1DC7FBDAD846919DB2FECB /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */; };
+		4B7B6FCD8D564C8D84114BA4 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */ = {isa = PBXBuildFile; fileRef = B036ED5BF1664EBB8AC3A53F /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */; };
+		58D8DB88C5DF425090B0EEA7 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.h */ = {isa = PBXBuildFile; fileRef = D9450298F8FB46A0B8E61EB8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.h */; };
+		5FA521A1FF2E470F87C25481 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = C7E82CCA7D424EC482CD59F7 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_demo.cpp */; };
+		706AA29CF6BF408482C59925 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_truetype.h */ = {isa = PBXBuildFile; fileRef = FA7D92E0AB2C4B39A53E9BFC /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_truetype.h */; };
+		71C72D23F1214B1189777680 /* /Users/jeremy/Downloads/Interstellar/imgui/imconfig.h */ = {isa = PBXBuildFile; fileRef = 306A7AD6A76F4A8AAE11018C /* /Users/jeremy/Downloads/Interstellar/imgui/imconfig.h */; };
+		800C0603234F4DD9ACF91B94 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.cpp */ = {isa = PBXBuildFile; fileRef = 914DF05401394552BD587641 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.cpp */; };
+		9CAF621818164B2FBEFD4CED /* /Users/jeremy/Downloads/Interstellar/src/texture.h */ = {isa = PBXBuildFile; fileRef = C48A214D66E0467BAF129370 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */; };
+		A06A28373231450490982037 /* /Users/jeremy/Downloads/Interstellar/src/render.h */ = {isa = PBXBuildFile; fileRef = 2F6DE1FE22A24A3BAB47629A /* /Users/jeremy/Downloads/Interstellar/src/render.h */; };
+		A9127939B77C433BACF2B776 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = ACC46A94AA604AA7A2EF7EDB /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_draw.cpp */; };
+		D041935410D54B57AB16A750 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_tables.cpp */ = {isa = PBXBuildFile; fileRef = 3B8FAB131D48444EB97DBD7E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_tables.cpp */; };
+		E78FDE72E5C34719A555D21A /* /Users/jeremy/Downloads/Interstellar/src/shader.h */ = {isa = PBXBuildFile; fileRef = 37A08B55FBAA403AA4991A64 /* /Users/jeremy/Downloads/Interstellar/src/shader.h */; };
+		EAAF6BB246464D37836E31EC /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = 338E6682A3844405AFB4BAF8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_widgets.cpp */; };
+		EABE4D62E6E1465D9D726759 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = 1757D824BE724FD59F91B321 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.cpp */; };
+		F076D694B3F64ADD9E6CC035 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.h */ = {isa = PBXBuildFile; fileRef = 0F874BE20FCE46B9B0800E3E /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.h */; };
+		FAA98991B58549EC8CFA45E1 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_rectpack.h */ = {isa = PBXBuildFile; fileRef = EBC5D17C46FB4F86B36D3A81 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_rectpack.h */; };
+		FEE0561E4FCC4C38A1FF24C4 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_internal.h */ = {isa = PBXBuildFile; fileRef = 1E25B66F1F4F4933BFAC190E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_internal.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		007DEF1A65B642488A9B9D4B /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		074023C93CC34A30A5D9FFAF /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		4F8AC1EDC27544989513009E /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		A3E15055AF284D778DCF5B2B /* MinSizeRel */ = {
+		7F504F8111E947E7A8C0A59C /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		9BCD2D6970A142038E7CE416 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		F3772BFDD1E448809CD42BDD /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F6B9D004E0A44B3E912A92B5 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		1647C2654A4B49A58D7FB5E9 /* PBXContainerItemProxy */ = {
+		1943FD29867D490AB423EAD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C225A1D330849EAA95051A1 /* Project object */;
+			containerPortal = 13F3FD17E6304C26AF2B9965 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C584C3BD9A28AA0C9D9CB55;
 			remoteInfo = ZERO_CHECK;
 		};
-		72291DF58D1B46FD9309C4FE /* PBXContainerItemProxy */ = {
+		5F7F06CE3A8045519A1B724F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C225A1D330849EAA95051A1 /* Project object */;
+			containerPortal = 13F3FD17E6304C26AF2B9965 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BD7E163DA0840AC8B2D18301;
 			remoteInfo = Interstellar;
 		};
-		A231EE75F57E44B7914F7944 /* PBXContainerItemProxy */ = {
+		BD91B62D00B04FCCAD4FD6E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C225A1D330849EAA95051A1 /* Project object */;
+			containerPortal = 13F3FD17E6304C26AF2B9965 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C584C3BD9A28AA0C9D9CB55;
 			remoteInfo = ZERO_CHECK;
@@ -104,24 +120,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0853EB9A7193409C859FF2A6 /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		105BB5DF6D7E4FABB08EAB5C /* /Users/jeremy/Downloads/Interstellar/src/shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader.h; path = src/shader.h; sourceTree = SOURCE_ROOT; };
-		230CD1ED95924BC3A74F4E87 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLDebugMessageCallback.h; path = src/GLDebugMessageCallback.h; sourceTree = SOURCE_ROOT; };
-		2EDD1429CFD04E2D8FA28077 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = src/shader.cpp; sourceTree = SOURCE_ROOT; };
-		4582E833C29B4CA29F0ABCB2 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		4C2B670482FB4E7E9129DB0D /* Interstellar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Interstellar; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F62A388C74743DE94C9D953 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = src/texture.h; sourceTree = SOURCE_ROOT; };
-		5812F7D847194095B8DB9BEB /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		6C7406A1BD9F48159BFA37A3 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/texture.cpp; sourceTree = SOURCE_ROOT; };
-		74F0F0C524794DFDBDAB00D1 /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = render.cpp; path = src/render.cpp; sourceTree = SOURCE_ROOT; };
-		986CCE0E5BB847EFA7556091 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
-		990F81F47A924C1E93C940AC /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		CF30AEE5FAC946B4B2EDD1D4 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLDebugMessageCallback.cc; path = src/GLDebugMessageCallback.cc; sourceTree = SOURCE_ROOT; };
-		DF05A7000A2C42999A56632A /* /Users/jeremy/Downloads/Interstellar/src/render.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = render.h; path = src/render.h; sourceTree = SOURCE_ROOT; };
+		0F3AE9F2FAD2496DBF76A52F /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_opengl3_loader.h; path = src/imgui_impl_opengl3_loader.h; sourceTree = SOURCE_ROOT; };
+		0F874BE20FCE46B9B0800E3E /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_opengl3.h; path = src/imgui_impl_opengl3.h; sourceTree = SOURCE_ROOT; };
+		1757D824BE724FD59F91B321 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		1E25B66F1F4F4933BFAC190E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_internal.h; path = imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		2160F993B8024EFFB81A0F44 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		2F6DE1FE22A24A3BAB47629A /* /Users/jeremy/Downloads/Interstellar/src/render.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = render.h; path = src/render.h; sourceTree = SOURCE_ROOT; };
+		306A7AD6A76F4A8AAE11018C /* /Users/jeremy/Downloads/Interstellar/imgui/imconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imconfig.h; path = imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		338E6682A3844405AFB4BAF8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+		37A08B55FBAA403AA4991A64 /* /Users/jeremy/Downloads/Interstellar/src/shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader.h; path = src/shader.h; sourceTree = SOURCE_ROOT; };
+		3B8FAB131D48444EB97DBD7E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_tables.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_tables.cpp; path = imgui/imgui_tables.cpp; sourceTree = SOURCE_ROOT; };
+		5C986AC601104E9FA8CF14B6 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shader.cpp; path = src/shader.cpp; sourceTree = SOURCE_ROOT; };
+		759D83C817A94ECB9B11BB15 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
+		7DE97180CCDD4DA9894E3483 /* Interstellar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Interstellar; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BF3B0B050E4554836846D0 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = src/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		914DF05401394552BD587641 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = src/imgui_impl_opengl3.cpp; sourceTree = SOURCE_ROOT; };
+		9747A281DF314CFE85DC90E7 /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9E1DC7FBDAD846919DB2FECB /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A8811F0558CC4A2E8A0D25D0 /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		ACC46A94AA604AA7A2EF7EDB /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		B036ED5BF1664EBB8AC3A53F /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLDebugMessageCallback.cc; path = src/GLDebugMessageCallback.cc; sourceTree = SOURCE_ROOT; };
+		BCBDFCC64F444CA482E48D19 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_textedit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_textedit.h; path = imgui/imstb_textedit.h; sourceTree = SOURCE_ROOT; };
+		C48A214D66E0467BAF129370 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = texture.h; path = src/texture.h; sourceTree = SOURCE_ROOT; };
+		C7E82CCA7D424EC482CD59F7 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		D9450298F8FB46A0B8E61EB8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui.h; path = imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		DCFBF99A98D04E8EA571B627 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLDebugMessageCallback.h; path = src/GLDebugMessageCallback.h; sourceTree = SOURCE_ROOT; };
+		EBC5D17C46FB4F86B36D3A81 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_rectpack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_rectpack.h; path = imgui/imstb_rectpack.h; sourceTree = SOURCE_ROOT; };
+		F0D21AA946D54667BA173C3C /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_glfw.h; path = src/imgui_impl_glfw.h; sourceTree = SOURCE_ROOT; };
+		FA7D92E0AB2C4B39A53E9BFC /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_truetype.h; path = imgui/imstb_truetype.h; sourceTree = SOURCE_ROOT; };
+		FCA05457181242D794D56D4F /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = render.cpp; path = src/render.cpp; sourceTree = SOURCE_ROOT; };
+		FE0CDD47A43B45219F4B4C36 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = texture.cpp; path = src/texture.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58F70A17C299437F9EE131B5 /* Frameworks */ = {
+		55A5108F5C7C4E27B61E6A4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,88 +163,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		129B20BEC3854AABBA43CC79 /* Header Files */ = {
+		23B14BFCA8DC45589059602A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				230CD1ED95924BC3A74F4E87 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */,
-				DF05A7000A2C42999A56632A /* /Users/jeremy/Downloads/Interstellar/src/render.h */,
-				105BB5DF6D7E4FABB08EAB5C /* /Users/jeremy/Downloads/Interstellar/src/shader.h */,
-				986CCE0E5BB847EFA7556091 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */,
-				4F62A388C74743DE94C9D953 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		281612568C454503BB2C421A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		287A95E790604C7EB8CA7E2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4C2B670482FB4E7E9129DB0D /* Interstellar */,
+				7DE97180CCDD4DA9894E3483 /* Interstellar */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		300D8B91E5CD4798888BACD8 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				57D1DECE64934E38AE17E2D3 /* CMake Rules */,
-				0853EB9A7193409C859FF2A6 /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		57D1DECE64934E38AE17E2D3 /* CMake Rules */ = {
+		2A50EAC78B8A41178A9DBE40 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		818CB22C28BF4BEDB1032F28 /* Source Files */ = {
+		2C183B4842BB485897A29D92 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF30AEE5FAC946B4B2EDD1D4 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */,
-				4582E833C29B4CA29F0ABCB2 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */,
-				74F0F0C524794DFDBDAB00D1 /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */,
-				2EDD1429CFD04E2D8FA28077 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */,
-				6C7406A1BD9F48159BFA37A3 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */,
+				306A7AD6A76F4A8AAE11018C /* /Users/jeremy/Downloads/Interstellar/imgui/imconfig.h */,
+				D9450298F8FB46A0B8E61EB8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.h */,
+				1E25B66F1F4F4933BFAC190E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_internal.h */,
+				EBC5D17C46FB4F86B36D3A81 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_rectpack.h */,
+				BCBDFCC64F444CA482E48D19 /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_textedit.h */,
+				FA7D92E0AB2C4B39A53E9BFC /* /Users/jeremy/Downloads/Interstellar/imgui/imstb_truetype.h */,
+				DCFBF99A98D04E8EA571B627 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.h */,
+				F0D21AA946D54667BA173C3C /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.h */,
+				0F874BE20FCE46B9B0800E3E /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.h */,
+				0F3AE9F2FAD2496DBF76A52F /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3_loader.h */,
+				2F6DE1FE22A24A3BAB47629A /* /Users/jeremy/Downloads/Interstellar/src/render.h */,
+				37A08B55FBAA403AA4991A64 /* /Users/jeremy/Downloads/Interstellar/src/shader.h */,
+				759D83C817A94ECB9B11BB15 /* /Users/jeremy/Downloads/Interstellar/src/stb_image.h */,
+				C48A214D66E0467BAF129370 /* /Users/jeremy/Downloads/Interstellar/src/texture.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4B02F1F965414627AB944744 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4BD241BB4B0443258748AA7E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1757D824BE724FD59F91B321 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.cpp */,
+				C7E82CCA7D424EC482CD59F7 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_demo.cpp */,
+				ACC46A94AA604AA7A2EF7EDB /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_draw.cpp */,
+				3B8FAB131D48444EB97DBD7E /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_tables.cpp */,
+				338E6682A3844405AFB4BAF8 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_widgets.cpp */,
+				B036ED5BF1664EBB8AC3A53F /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */,
+				82BF3B0B050E4554836846D0 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.cpp */,
+				914DF05401394552BD587641 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.cpp */,
+				2160F993B8024EFFB81A0F44 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */,
+				FCA05457181242D794D56D4F /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */,
+				5C986AC601104E9FA8CF14B6 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */,
+				FE0CDD47A43B45219F4B4C36 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		98581D456A614F5FAC4E106D /* Frameworks */ = {
+		6AB75A7C03E240B0B8BC64B5 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				5812F7D847194095B8DB9BEB /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */,
+				2A50EAC78B8A41178A9DBE40 /* CMake Rules */,
+				9747A281DF314CFE85DC90E7 /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */,
 			);
-			name = Frameworks;
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		A549C6B28AC3442AB063FFD9 /* Interstellar */ = {
+		B01565A2F1F34F4DBA0A936F = {
 			isa = PBXGroup;
 			children = (
-				818CB22C28BF4BEDB1032F28 /* Source Files */,
-				129B20BEC3854AABBA43CC79 /* Header Files */,
-				990F81F47A924C1E93C940AC /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */,
+				D01355127A26459EBF6A0CB1 /* Interstellar */,
+				6AB75A7C03E240B0B8BC64B5 /* ALL_BUILD */,
+				23B14BFCA8DC45589059602A /* Products */,
+				D8ECE50AAC07453DABD51634 /* Frameworks */,
+				4B02F1F965414627AB944744 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		D01355127A26459EBF6A0CB1 /* Interstellar */ = {
+			isa = PBXGroup;
+			children = (
+				2C183B4842BB485897A29D92 /* Header Files */,
+				4BD241BB4B0443258748AA7E /* Source Files */,
+				9E1DC7FBDAD846919DB2FECB /* /Users/jeremy/Downloads/Interstellar/CMakeLists.txt */,
 			);
 			name = Interstellar;
 			sourceTree = "<group>";
 		};
-		CE02DBF55BA1473184DCB5E5 = {
+		D8ECE50AAC07453DABD51634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A549C6B28AC3442AB063FFD9 /* Interstellar */,
-				300D8B91E5CD4798888BACD8 /* ALL_BUILD */,
-				287A95E790604C7EB8CA7E2D /* Products */,
-				98581D456A614F5FAC4E106D /* Frameworks */,
-				281612568C454503BB2C421A /* Resources */,
+				A8811F0558CC4A2E8A0D25D0 /* /Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks/OpenGL.framework */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,43 +268,43 @@
 /* Begin PBXNativeTarget section */
 		BD7E163DA0840AC8B2D18301 /* Interstellar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5127F3AF999F44D89D8D99AC /* Build configuration list for PBXNativeTarget "Interstellar" */;
+			buildConfigurationList = 6471925F783F41C895624822 /* Build configuration list for PBXNativeTarget "Interstellar" */;
 			buildPhases = (
-				89DE439996C7469D8C5D5E22 /* Sources */,
-				58F70A17C299437F9EE131B5 /* Frameworks */,
+				5F3E1443B3E5474BA331F589 /* Sources */,
+				55A5108F5C7C4E27B61E6A4C /* Frameworks */,
 				C6EBD2E297442CFC74D2B321 /* CMake PostBuild Rules */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4F675CB3405941BCB9C75BDD /* PBXTargetDependency */,
+				745733F57FA34BB19B35BC6A /* PBXTargetDependency */,
 			);
 			name = Interstellar;
 			productName = Interstellar;
-			productReference = 4C2B670482FB4E7E9129DB0D /* Interstellar */;
+			productReference = 7DE97180CCDD4DA9894E3483 /* Interstellar */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6C225A1D330849EAA95051A1 /* Project object */ = {
+		13F3FD17E6304C26AF2B9965 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1620;
 			};
-			buildConfigurationList = 0C3C0F6B9EF64223BA9A0D2D /* Build configuration list for PBXProject "Interstellar" */;
+			buildConfigurationList = A897B7CFFCEC4F7A92692C42 /* Build configuration list for PBXProject "Interstellar" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				4F8AC1EDC27544989513009E /* Debug */,
-				074023C93CC34A30A5D9FFAF /* Release */,
-				A3E15055AF284D778DCF5B2B /* MinSizeRel */,
-				007DEF1A65B642488A9B9D4B /* RelWithDebInfo */,
+				F3772BFDD1E448809CD42BDD /* Debug */,
+				9BCD2D6970A142038E7CE416 /* Release */,
+				7F504F8111E947E7A8C0A59C /* MinSizeRel */,
+				F6B9D004E0A44B3E912A92B5 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = CE02DBF55BA1473184DCB5E5;
+			mainGroup = B01565A2F1F34F4DBA0A936F;
 			projectDirPath = /Users/jeremy/Downloads/Interstellar;
 			projectRoot = "";
 			targets = (
@@ -406,81 +454,47 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		89DE439996C7469D8C5D5E22 /* Sources */ = {
+		5F3E1443B3E5474BA331F589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734A311810AA4248A374C871 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */,
-				9165AC73DF824CD59D40BEC8 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */,
-				36B5DA22E45F4C4696975A40 /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */,
-				3BB978C309774C658B2514E8 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */,
-				EFECB7F63EEE43C6B0A58267 /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */,
+				EABE4D62E6E1465D9D726759 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui.cpp */,
+				5FA521A1FF2E470F87C25481 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_demo.cpp */,
+				A9127939B77C433BACF2B776 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_draw.cpp */,
+				D041935410D54B57AB16A750 /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_tables.cpp */,
+				EAAF6BB246464D37836E31EC /* /Users/jeremy/Downloads/Interstellar/imgui/imgui_widgets.cpp */,
+				4B7B6FCD8D564C8D84114BA4 /* /Users/jeremy/Downloads/Interstellar/src/GLDebugMessageCallback.cc */,
+				26AD4B17C1A643A8A2EB8F8E /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_glfw.cpp */,
+				800C0603234F4DD9ACF91B94 /* /Users/jeremy/Downloads/Interstellar/src/imgui_impl_opengl3.cpp */,
+				3FC5A32C58D641F38BC99021 /* /Users/jeremy/Downloads/Interstellar/src/main.cpp */,
+				208C963C72154E61A5E2D96F /* /Users/jeremy/Downloads/Interstellar/src/render.cpp */,
+				15E2A84E7ACB40B0B117DED5 /* /Users/jeremy/Downloads/Interstellar/src/shader.cpp */,
+				162C8028D91041DFB76104CA /* /Users/jeremy/Downloads/Interstellar/src/texture.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C5A4F77A85947ED87651C50 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C584C3BD9A28AA0C9D9CB55 /* ZERO_CHECK */;
-			targetProxy = A231EE75F57E44B7914F7944 /* PBXContainerItemProxy */;
-		};
-		4F675CB3405941BCB9C75BDD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C584C3BD9A28AA0C9D9CB55 /* ZERO_CHECK */;
-			targetProxy = 1647C2654A4B49A58D7FB5E9 /* PBXContainerItemProxy */;
-		};
-		51A29BD4279042639A45C606 /* PBXTargetDependency */ = {
+		5614032A5ADE4E20BF38B05D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BD7E163DA0840AC8B2D18301 /* Interstellar */;
-			targetProxy = 72291DF58D1B46FD9309C4FE /* PBXContainerItemProxy */;
+			targetProxy = 5F7F06CE3A8045519A1B724F /* PBXContainerItemProxy */;
+		};
+		745733F57FA34BB19B35BC6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C584C3BD9A28AA0C9D9CB55 /* ZERO_CHECK */;
+			targetProxy = BD91B62D00B04FCCAD4FD6E0 /* PBXContainerItemProxy */;
+		};
+		B570B685B4C2415D8B4ACFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C584C3BD9A28AA0C9D9CB55 /* ZERO_CHECK */;
+			targetProxy = 1943FD29867D490AB423EAD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		094B0A200D2C489DBF8574E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
-				SYMROOT = /Users/jeremy/Downloads/Interstellar/build/build;
-			};
-			name = Debug;
-		};
-		1955182E5EE64862A863FE40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		195FB74E28AA4F7A9A2FA5A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/jeremy/Downloads/Interstellar/build/build;
-			};
-			name = Release;
-		};
-		21A46497FAB04137969F334E /* MinSizeRel */ = {
+		0B3631557C5D4B02A0E16352 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -502,7 +516,113 @@ fi
 			};
 			name = MinSizeRel;
 		};
-		310CFDE0694E4C42A8B8E6A0 /* RelWithDebInfo */ = {
+		0E9989BDDA5242D59BC13A9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2103D721536241D8BA30F14F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/jeremy/Downloads/Interstellar/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jeremy/Downloads/Interstellar/imgui,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libglfw.3.4.dylib,/opt/homebrew/lib/libGLEW.2.2.0.dylib,/opt/homebrew/lib/libglm.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Interstellar;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jeremy/Downloads/Interstellar/build/build/Interstellar.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		41116561290C4329BAC005D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/jeremy/Downloads/Interstellar/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jeremy/Downloads/Interstellar/imgui,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libglfw.3.4.dylib,/opt/homebrew/lib/libGLEW.2.2.0.dylib,/opt/homebrew/lib/libglm.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Interstellar;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/jeremy/Downloads/Interstellar/build/build/Interstellar.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		469B5D58AD17434ABFED5F82 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4C6B64358D724167B9C1BB18 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
@@ -512,7 +632,115 @@ fi
 			};
 			name = RelWithDebInfo;
 		};
-		35DDAABAFA58430F88EFB4DB /* RelWithDebInfo */ = {
+		5ADF3297C81A4EA9A34F63C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/jeremy/Downloads/Interstellar/build/build;
+			};
+			name = Release;
+		};
+		8D145B6BFF114F86A9AB92F7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8E8E03BB2F304349B6019E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B42924E5061147348B5FF1B8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/jeremy/Downloads/Interstellar/build/build;
+			};
+			name = MinSizeRel;
+		};
+		BD42D4DD53424819AC05DEA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C15DBC98470B427D9DD08A0B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CA889647B36F4D0E9EA48CA4 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -527,6 +755,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jeremy/Downloads/Interstellar/imgui,"$(inherited)");
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
@@ -542,7 +771,7 @@ fi
 			};
 			name = RelWithDebInfo;
 		};
-		561A3499046D4AD29E7BA68B /* Debug */ = {
+		D5E31D53226C44AD99E42CC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -557,6 +786,7 @@ fi
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/jeremy/Downloads/Interstellar/imgui,"$(inherited)");
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
@@ -572,7 +802,7 @@ fi
 			};
 			name = Debug;
 		};
-		7B3B00B1281F40659FCD86C4 /* RelWithDebInfo */ = {
+		E11DABFA39AC4C6996A35B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -587,241 +817,70 @@ fi
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		80E7AC673C734167A4568870 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		84BD9A2CDE124785BBE4D6BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		B3D91B46693E4C4A925AA8F9 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		B89AE099CF25440FB464EF81 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		BC2F7544B7A3450DAAE33510 /* MinSizeRel */ = {
+		E909FB50E85542308718D88D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = /Users/jeremy/Downloads/Interstellar/build/build;
-			};
-			name = MinSizeRel;
-		};
-		DCADD1CE18B64B10B5B1EE42 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jeremy/Downloads/Interstellar/build/MinSizeRel;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = (/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks,"$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libglfw.3.4.dylib,/opt/homebrew/lib/libGLEW.2.2.0.dylib,/opt/homebrew/lib/libglm.dylib,"-framework OpenGL","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Interstellar;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/jeremy/Downloads/Interstellar/build/build/Interstellar.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		E1562BC9814641208C93B769 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/jeremy/Downloads/Interstellar/build/Release;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				FRAMEWORK_SEARCH_PATHS = (/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/System/Library/Frameworks,"$(inherited)");
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/opt/homebrew/lib/libglfw.3.4.dylib,/opt/homebrew/lib/libGLEW.2.2.0.dylib,/opt/homebrew/lib/libglm.dylib,"-framework OpenGL","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Interstellar;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/jeremy/Downloads/Interstellar/build/build/Interstellar.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		E5E818B43ADC4FD0BB038CF4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C3C0F6B9EF64223BA9A0D2D /* Build configuration list for PBXProject "Interstellar" */ = {
+		6471925F783F41C895624822 /* Build configuration list for PBXNativeTarget "Interstellar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				094B0A200D2C489DBF8574E0 /* Debug */,
-				195FB74E28AA4F7A9A2FA5A2 /* Release */,
-				BC2F7544B7A3450DAAE33510 /* MinSizeRel */,
-				310CFDE0694E4C42A8B8E6A0 /* RelWithDebInfo */,
+				D5E31D53226C44AD99E42CC8 /* Debug */,
+				2103D721536241D8BA30F14F /* Release */,
+				41116561290C4329BAC005D5 /* MinSizeRel */,
+				CA889647B36F4D0E9EA48CA4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5127F3AF999F44D89D8D99AC /* Build configuration list for PBXNativeTarget "Interstellar" */ = {
+		6FCAF292B7B943E69083E5C8 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				561A3499046D4AD29E7BA68B /* Debug */,
-				E1562BC9814641208C93B769 /* Release */,
-				DCADD1CE18B64B10B5B1EE42 /* MinSizeRel */,
-				35DDAABAFA58430F88EFB4DB /* RelWithDebInfo */,
+				BD42D4DD53424819AC05DEA0 /* Debug */,
+				8E8E03BB2F304349B6019E5A /* Release */,
+				0B3631557C5D4B02A0E16352 /* MinSizeRel */,
+				8D145B6BFF114F86A9AB92F7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9360A95F6FF840A3B2F11E8D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		A7FC758A530E457AB1DD039F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5E818B43ADC4FD0BB038CF4 /* Debug */,
-				80E7AC673C734167A4568870 /* Release */,
-				21A46497FAB04137969F334E /* MinSizeRel */,
-				7B3B00B1281F40659FCD86C4 /* RelWithDebInfo */,
+				0E9989BDDA5242D59BC13A9F /* Debug */,
+				E11DABFA39AC4C6996A35B6A /* Release */,
+				C15DBC98470B427D9DD08A0B /* MinSizeRel */,
+				469B5D58AD17434ABFED5F82 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BB72136CE7C44D289786F3AA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		A897B7CFFCEC4F7A92692C42 /* Build configuration list for PBXProject "Interstellar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84BD9A2CDE124785BBE4D6BF /* Debug */,
-				1955182E5EE64862A863FE40 /* Release */,
-				B89AE099CF25440FB464EF81 /* MinSizeRel */,
-				B3D91B46693E4C4A925AA8F9 /* RelWithDebInfo */,
+				E909FB50E85542308718D88D /* Debug */,
+				5ADF3297C81A4EA9A34F63C5 /* Release */,
+				B42924E5061147348B5FF1B8 /* MinSizeRel */,
+				4C6B64358D724167B9C1BB18 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6C225A1D330849EAA95051A1 /* Project object */;
+	rootObject = 13F3FD17E6304C26AF2B9965 /* Project object */;
 }

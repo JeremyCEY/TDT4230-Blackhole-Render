@@ -13,7 +13,10 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <imgui.h>
 
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 #include "GLDebugMessageCallback.h"
 #include "render.h"
 #include "shader.h"
@@ -24,6 +27,16 @@ static const int SCR_WIDTH = 1920;
 static const int SCR_HEIGHT = 1080;
 
 static float mouseX, mouseY;
+
+#define IMGUI_TOGGLE(NAME, DEFAULT)                                            \
+  static bool NAME = DEFAULT;                                                  \
+  ImGui::Checkbox(#NAME, &NAME);                                               \
+  rtti.floatUniforms[#NAME] = NAME ? 1.0f : 0.0f;
+
+#define IMGUI_SLIDER(NAME, DEFAULT, MIN, MAX)                                  \
+  static float NAME = DEFAULT;                                                 \
+  ImGui::SliderFloat(#NAME, &NAME, MIN, MAX);                                  \
+  rtti.floatUniforms[#NAME] = NAME;
 
 static void glfwErrorCallback(int error, const char *description) {
   fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -128,6 +141,13 @@ int main(void)
       glDebugMessageCallback(GLDebugMessageCallback, nullptr);
     }
     
+    // Initialize ImGui
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 410");  // Use #version 410 for OpenGL 4.1 shaders
+
+    
     GLuint fboBlackhole, texBlackhole;
     texBlackhole = createColorTexture(SCR_WIDTH, SCR_HEIGHT);
     
@@ -144,26 +164,14 @@ int main(void)
     PostProcessPass passthrough("shader/passthrough.frag");
     
     
-    
-//    // Load shaders
-//    GLuint skyboxShader = createShaderProgram("shader/skybox.vert", "shader/skybox.frag");
-//    GLuint blackholeShader = createShaderProgram("shader/simple.vert", "shader/blackhole_main.frag");
-//
-//    // Load cubemap
-//    GLuint cubemapTexture = loadCubemap("assets/skybox_nebula_dark");
-//
-//    // Load color map
-//    GLuint colorMapTexture = loadTexture2D("assets/color_map.png");
-//
-//    // Create skybox VAO
-//    GLuint skyboxVAO = createSkyboxVAO();
-    
-    
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
+        
+        
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
 
-        // Clear the screen
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         
         int width, height;
@@ -186,21 +194,21 @@ int main(void)
           rtti.width = SCR_WIDTH;
           rtti.height = SCR_HEIGHT;
 
-//              IMGUI_TOGGLE(gravatationalLensing, true);
-//              IMGUI_TOGGLE(renderBlackHole, true);
-//              IMGUI_TOGGLE(mouseControl, true);
-//              IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
-//              IMGUI_TOGGLE(frontView, false);
-//              IMGUI_TOGGLE(topView, false);
-//              IMGUI_TOGGLE(adiskEnabled, true);
-//              IMGUI_TOGGLE(adiskParticle, true);
-//              IMGUI_SLIDER(adiskDensityV, 2.0f, 0.0f, 10.0f);
-//              IMGUI_SLIDER(adiskDensityH, 4.0f, 0.0f, 10.0f);
-//              IMGUI_SLIDER(adiskHeight, 0.55f, 0.0f, 1.0f);
-//              IMGUI_SLIDER(adiskLit, 0.25f, 0.0f, 4.0f);
-//              IMGUI_SLIDER(adiskNoiseLOD, 5.0f, 1.0f, 12.0f);
-//              IMGUI_SLIDER(adiskNoiseScale, 0.8f, 0.0f, 10.0f);
-//              IMGUI_SLIDER(adiskSpeed, 0.5f, 0.0f, 1.0f);
+          IMGUI_TOGGLE(gravatationalLensing, true);
+          IMGUI_TOGGLE(renderBlackHole, true);
+          IMGUI_TOGGLE(mouseControl, true);
+          IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
+          IMGUI_TOGGLE(frontView, false);
+          IMGUI_TOGGLE(topView, false);
+          IMGUI_TOGGLE(adiskEnabled, true);
+          IMGUI_TOGGLE(adiskParticle, true);
+          IMGUI_SLIDER(adiskDensityV, 2.0f, 0.0f, 10.0f);
+          IMGUI_SLIDER(adiskDensityH, 4.0f, 0.0f, 10.0f);
+          IMGUI_SLIDER(adiskHeight, 0.55f, 0.0f, 1.0f);
+          IMGUI_SLIDER(adiskLit, 0.25f, 0.0f, 4.0f);
+          IMGUI_SLIDER(adiskNoiseLOD, 5.0f, 1.0f, 12.0f);
+          IMGUI_SLIDER(adiskNoiseScale, 0.8f, 0.0f, 10.0f);
+          IMGUI_SLIDER(adiskSpeed, 0.5f, 0.0f, 1.0f);
 
           renderToTexture(rtti);
         }
@@ -228,7 +236,7 @@ int main(void)
             }
         
         static int bloomIterations = MAX_BLOOM_ITER;
-//            ImGui::SliderInt("bloomIterations", &bloomIterations, 1, 8);
+        ImGui::SliderInt("bloomIterations", &bloomIterations, 1, 8);
         for (int level = 0; level < bloomIterations; level++) {
           RenderToTextureInfo rtti;
           rtti.fragShader = "shader/bloom_downsample.frag";
@@ -264,7 +272,7 @@ int main(void)
           rtti.width = SCR_WIDTH;
           rtti.height = SCR_HEIGHT;
 
-//          IMGUI_SLIDER(bloomStrength, 0.1f, 0.0f, 1.0f);
+          IMGUI_SLIDER(bloomStrength, 0.1f, 0.0f, 1.0f);
 
           renderToTexture(rtti);
         }
@@ -278,15 +286,16 @@ int main(void)
           rtti.width = SCR_WIDTH;
           rtti.height = SCR_HEIGHT;
 
-//          IMGUI_TOGGLE(tonemappingEnabled, true);
-//          IMGUI_SLIDER(gamma, 2.5f, 1.0f, 4.0f);
+          IMGUI_TOGGLE(tonemappingEnabled, true);
+          IMGUI_SLIDER(gamma, 2.5f, 1.0f, 4.0f);
 
           renderToTexture(rtti);
         }
 
         passthrough.render(texTonemapped);
         
-        
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
         // Swap buffers
         glfwSwapBuffers(window);
