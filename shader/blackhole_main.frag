@@ -20,6 +20,8 @@ uniform float mouseControl = 0.0;
 uniform float gravatationalLensing = 1.0;
 uniform float fovScale = 1.0;
 
+uniform float blackholeMass = 1.0;
+
 uniform float adiskEnabled = 1.0;
 uniform float adiskParticle = 1.0;
 uniform float adiskHeight = 0.2;
@@ -116,10 +118,10 @@ float snoise(vec3 v) {
 // Calculate the acceleration based on the gravitational lensing equation
 // acc = -1.5 * h2 * pos / r^5
 // https://flannelhead.github.io/posts/2016-03-06-photons-and-black-holes.html
-vec3 accel(float h2, vec3 pos) {
+vec3 accel(float h2, vec3 pos, float mass) {
   float r2 = dot(pos, pos);
   float r5 = pow(r2, 2.5);
-  vec3 acc = -1.5 * h2 * pos / r5 * 1.0;
+  vec3 acc = -1.5 * h2 * pos / r5 * mass;
   return acc;
 }
 
@@ -185,8 +187,8 @@ mat3 lookAt(vec3 origin, vec3 target, float roll) {
 
 
 void adiskColor(vec3 pos, inout vec3 color, inout float alpha) {
-  float innerRadius = 2.6;
-  float outerRadius = 12.0;
+  float innerRadius = 2.6 * blackholeMass;
+  float outerRadius = 12.0 * blackholeMass;
 
   // Density linearly decreases as the distance to the blackhole center
   // increases.
@@ -257,7 +259,7 @@ vec3 traceColor(vec3 pos, vec3 dir) {
         if (renderBlackHole > 0.5) {
             // If gravatational lensing is applied
             if (gravatationalLensing > 0.5) {
-                vec3 acc = accel(h2, pos); // acceleration vector
+                vec3 acc = accel(h2, pos, blackholeMass); // acceleration vector
                 dir += acc;
             }
 

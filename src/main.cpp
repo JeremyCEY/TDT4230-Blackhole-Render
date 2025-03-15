@@ -108,7 +108,7 @@ int main(void)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_TRUE);
     
     GLFWwindow *window =
-    glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Blackhole", NULL, NULL);
+    glfwCreateWindow(SCR_WIDTH/2, SCR_HEIGHT/2, "Blackhole", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -168,7 +168,22 @@ int main(void)
     double lastTime = glfwGetTime();
     int nbFrames = 0;
     float fps = 0.0f;
-
+    
+    
+    //Cube map paths
+    const char* cubemapPaths[] = {
+        "assets/skybox_nebula_bright",
+        "assets/skybox_nebula_dark",
+        "assets/skybox_blue",
+        "assets/skybox_orange",
+        "assets/skybox_darkblue",
+        "assets/skybox_brown",
+        "assets/skybox_green",
+    };
+    
+    static int currentCubemapIndex = 0; // Index of the currently selected cubemap
+    // Load initally selected Cube Map before loop
+    static GLuint galaxy = loadCubemap(cubemapPaths[currentCubemapIndex]);
     
     // Main loop
     while (!glfwWindowShouldClose(window)) {
@@ -192,7 +207,13 @@ int main(void)
         glfwGetFramebufferSize(window, &width, &height);
         glViewport(0, 0, width, height);
         
-        static GLuint galaxy = loadCubemap("assets/skybox_nebula_dark");
+        ImGui::Text("Skybox Settings");
+        
+        if (ImGui::Combo("cubeMap", &currentCubemapIndex, cubemapPaths, IM_ARRAYSIZE(cubemapPaths))) {
+            // Load the selected cubemap
+            galaxy = loadCubemap(cubemapPaths[currentCubemapIndex]);
+        }
+
         static GLuint colorMap = loadTexture2D("assets/color_map.png");
         static GLuint uvChecker = loadTexture2D("assets/uv_checker.png");
         
@@ -208,19 +229,32 @@ int main(void)
             rtti.width = SCR_WIDTH;
             rtti.height = SCR_HEIGHT;
             
-            // Toggle Blackhole
-            IMGUI_TOGGLE(renderBlackHole, true);
             // Toggle Skybox
             IMGUI_TOGGLE(renderSkybox, true);
             
+            ImGui::Dummy(ImVec2(0.0f, 12.0f));
+            ImGui::Text("Camera Controls");
+            
             // Camera Controls
             IMGUI_TOGGLE(mouseControl, true);
-            IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
             IMGUI_TOGGLE(frontView, false);
             IMGUI_TOGGLE(topView, false);
+            IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
+            // Toggle FPS counter
+            ImGui::Checkbox("FPS Counter", &showFPS);
+            
+            ImGui::Dummy(ImVec2(0.0f, 12.0f));
+            ImGui::Text("Blackhole Settings");
+            
+            // Toggle Blackhole
+            IMGUI_TOGGLE(renderBlackHole, true);
             
             // Toggle Gravitational Lensing
             IMGUI_TOGGLE(gravatationalLensing, true);
+            IMGUI_SLIDER(blackholeMass, 1.0f, 0.5f, 2.0f);
+            
+            ImGui::Dummy(ImVec2(0.0f, 12.0f));
+            ImGui::Text("Accretion Disk Settings");
             
             // Accretion Disk Controls
             IMGUI_TOGGLE(adiskEnabled, true);
@@ -308,6 +342,9 @@ int main(void)
           rtti.targetTexture = texTonemapped;
           rtti.width = SCR_WIDTH;
           rtti.height = SCR_HEIGHT;
+            
+        ImGui::Dummy(ImVec2(0.0f, 12.0f));
+        ImGui::Text("Image Adjustment");
 
           IMGUI_TOGGLE(tonemappingEnabled, true);
           IMGUI_SLIDER(gamma, 2.5f, 1.0f, 4.0f);
@@ -317,8 +354,7 @@ int main(void)
 
         passthrough.render(texTonemapped);
         
-        // Toggle FPS counter
-        ImGui::Checkbox("FPS Counter", &showFPS);
+        
 
         // Display FPS
         if (showFPS) {
