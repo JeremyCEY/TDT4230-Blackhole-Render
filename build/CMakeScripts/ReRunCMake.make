@@ -5,10 +5,10 @@ empty:=
 space:= $(empty) $(empty)
 spaceplus:= $(empty)\ $(empty)
 
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Downloads/Interstellar/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Downloads/Interstellar/build/CMakeFiles/3.31.6/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Documents/Interstellar/CMakeLists.txt))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Documents/Interstellar/build/CMakeFiles/3.31.6/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Documents/Interstellar/build/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/jeremy/Documents/Interstellar/build/CMakeFiles/3.31.6/CMakeSystem.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/glew/CopyImportedTargetProperties.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/glew/glew-config.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/lib/cmake/glew/glew-targets-release.cmake))
@@ -138,5 +138,5 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/share/glm/glmC
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/share/glm/glmConfig.cmake))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /opt/homebrew/share/glm/glmConfigVersion.cmake))
 
-/Users/jeremy/Downloads/Interstellar/build/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/opt/homebrew/bin/cmake -S/Users/jeremy/Downloads/Interstellar -B/Users/jeremy/Downloads/Interstellar/build
+/Users/jeremy/Documents/Interstellar/build/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/opt/homebrew/bin/cmake -S/Users/jeremy/Documents/Interstellar -B/Users/jeremy/Documents/Interstellar/build

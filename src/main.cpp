@@ -28,6 +28,8 @@ static const int SCR_HEIGHT = 1080;
 
 static float mouseX, mouseY;
 
+static bool showFPS = true;
+
 #define IMGUI_TOGGLE(NAME, DEFAULT)                                            \
   static bool NAME = DEFAULT;                                                  \
   ImGui::Checkbox(#NAME, &NAME);                                               \
@@ -71,7 +73,7 @@ public:
 
     glDisable(GL_DEPTH_TEST);
 
-    glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // black
     glClear(GL_COLOR_BUFFER_BIT);
 
     glUseProgram(this->program);
@@ -160,20 +162,32 @@ int main(void)
     GLuint quadVAO = createQuadVAO();
     glBindVertexArray(quadVAO);
     
-    // Main loop
     PostProcessPass passthrough("shader/passthrough.frag");
     
+    // Variables for FPS calculation
+    double lastTime = glfwGetTime();
+    int nbFrames = 0;
+    float fps = 0.0f;
+
     
+    // Main loop
     while (!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
         
+        // FPS Calculation
+        double currentTime = glfwGetTime();
+        nbFrames++;
+        if (currentTime - lastTime >= 1.0) { // If last print was more than 1 sec ago
+            fps = nbFrames / (currentTime - lastTime);
+            nbFrames = 0;
+            lastTime += 1.0;
+        }
+        
+        glfwPollEvents(); // handle window events (keyboard, mouse, etc)
         
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        
-        
         int width, height;
         glfwGetFramebufferSize(window, &width, &height);
         glViewport(0, 0, width, height);
@@ -184,33 +198,42 @@ int main(void)
         
         static GLuint texBlackhole = createColorTexture(SCR_WIDTH, SCR_HEIGHT);
         {
-          RenderToTextureInfo rtti;
-          rtti.fragShader = "shader/blackhole_main.frag";
-          rtti.cubemapUniforms["galaxy"] = galaxy;
-          rtti.textureUniforms["colorMap"] = colorMap;
-          rtti.floatUniforms["mouseX"] = mouseX;
-          rtti.floatUniforms["mouseY"] = mouseY;
-          rtti.targetTexture = texBlackhole;
-          rtti.width = SCR_WIDTH;
-          rtti.height = SCR_HEIGHT;
-
-          IMGUI_TOGGLE(gravatationalLensing, true);
-          IMGUI_TOGGLE(renderBlackHole, true);
-          IMGUI_TOGGLE(mouseControl, true);
-          IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
-          IMGUI_TOGGLE(frontView, false);
-          IMGUI_TOGGLE(topView, false);
-          IMGUI_TOGGLE(adiskEnabled, true);
-          IMGUI_TOGGLE(adiskParticle, true);
-          IMGUI_SLIDER(adiskDensityV, 2.0f, 0.0f, 10.0f);
-          IMGUI_SLIDER(adiskDensityH, 4.0f, 0.0f, 10.0f);
-          IMGUI_SLIDER(adiskHeight, 0.55f, 0.0f, 1.0f);
-          IMGUI_SLIDER(adiskLit, 0.25f, 0.0f, 4.0f);
-          IMGUI_SLIDER(adiskNoiseLOD, 5.0f, 1.0f, 12.0f);
-          IMGUI_SLIDER(adiskNoiseScale, 0.8f, 0.0f, 10.0f);
-          IMGUI_SLIDER(adiskSpeed, 0.5f, 0.0f, 1.0f);
-
-          renderToTexture(rtti);
+            RenderToTextureInfo rtti;
+            rtti.fragShader = "shader/blackhole_main.frag";
+            rtti.cubemapUniforms["galaxy"] = galaxy;
+            rtti.textureUniforms["colorMap"] = colorMap;
+            rtti.floatUniforms["mouseX"] = mouseX;
+            rtti.floatUniforms["mouseY"] = mouseY;
+            rtti.targetTexture = texBlackhole;
+            rtti.width = SCR_WIDTH;
+            rtti.height = SCR_HEIGHT;
+            
+            // Toggle Blackhole
+            IMGUI_TOGGLE(renderBlackHole, true);
+            // Toggle Skybox
+            IMGUI_TOGGLE(renderSkybox, true);
+            
+            // Camera Controls
+            IMGUI_TOGGLE(mouseControl, true);
+            IMGUI_SLIDER(cameraRoll, 0.0f, -180.0f, 180.0f);
+            IMGUI_TOGGLE(frontView, false);
+            IMGUI_TOGGLE(topView, false);
+            
+            // Toggle Gravitational Lensing
+            IMGUI_TOGGLE(gravatationalLensing, true);
+            
+            // Accretion Disk Controls
+            IMGUI_TOGGLE(adiskEnabled, true);
+            IMGUI_TOGGLE(adiskParticle, true);
+            IMGUI_SLIDER(adiskDensityV, 2.0f, 0.0f, 10.0f);
+            IMGUI_SLIDER(adiskDensityH, 4.0f, 0.0f, 10.0f);
+            IMGUI_SLIDER(adiskHeight, 0.55f, 0.0f, 1.0f);
+            IMGUI_SLIDER(adiskLit, 0.25f, 0.0f, 4.0f);
+            IMGUI_SLIDER(adiskNoiseLOD, 5.0f, 1.0f, 12.0f);
+            IMGUI_SLIDER(adiskNoiseScale, 0.8f, 0.0f, 10.0f);
+            IMGUI_SLIDER(adiskSpeed, 0.5f, 0.0f, 1.0f);
+            
+            renderToTexture(rtti);
         }
         
         static GLuint texBrightness = createColorTexture(SCR_WIDTH, SCR_HEIGHT);
@@ -293,6 +316,17 @@ int main(void)
         }
 
         passthrough.render(texTonemapped);
+        
+        // Toggle FPS counter
+        ImGui::Checkbox("FPS Counter", &showFPS);
+
+        // Display FPS
+        if (showFPS) {
+            ImGui::Begin("FPS Counter", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_NoInputs);
+            ImGui::SetWindowPos(ImVec2(10, 10));
+            ImGui::Text("FPS: %.1f", fps);
+            ImGui::End();
+        }
         
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

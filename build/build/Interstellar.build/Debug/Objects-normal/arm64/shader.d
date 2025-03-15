@@ -1,2 +1,2 @@
-dependencies: /Users/jeremy/Downloads/Interstellar/src/shader.cpp \
-  /Users/jeremy/Downloads/Interstellar/src/shader.h
+dependencies: /Users/jeremy/Documents/Interstellar/src/shader.cpp \
+  /Users/jeremy/Documents/Interstellar/src/shader.h

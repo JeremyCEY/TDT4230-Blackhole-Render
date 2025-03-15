@@ -1,9 +1,5 @@
 #version 410 core
 
-const float PI = 3.14159265359;
-const float EPSILON = 0.0001;
-const float INFINITY = 1000000.0;
-
 out vec4 fragColor;
 
 uniform vec2 resolution; // viewport resolution in pixels
@@ -18,9 +14,10 @@ uniform float frontView = 0.0;
 uniform float topView = 0.0;
 uniform float cameraRoll = 0.0;
 
-uniform float gravatationalLensing = 1.0;
 uniform float renderBlackHole = 1.0;
+uniform float renderSkybox = 1.0;
 uniform float mouseControl = 0.0;
+uniform float gravatationalLensing = 1.0;
 uniform float fovScale = 1.0;
 
 uniform float adiskEnabled = 1.0;
@@ -33,19 +30,16 @@ uniform float adiskNoiseScale = 1.0;
 uniform float adiskNoiseLOD = 5.0;
 uniform float adiskSpeed = 0.5;
 
-struct Ring {
-  vec3 center;
-  vec3 normal;
-  float innerRadius;
-  float outerRadius;
-  float rotateSpeed;
-};
-
 ///----
 /// Simplex 3D Noise
 /// by Ian McEwan, Ashima Arts
-vec4 permute(vec4 x) { return mod(((x * 34.0) + 1.0) * x, 289.0); }
-vec4 taylorInvSqrt(vec4 r) { return 1.79284291400159 - 0.85373472095314 * r; }
+vec4 permute(vec4 x) {
+    return mod(((x * 34.0) + 1.0) * x, 289.0);
+}
+
+vec4 taylorInvSqrt(vec4 r) {
+    return 1.79284291400159 - 0.85373472095314 * r;
+}
 
 float snoise(vec3 v) {
   const vec2 C = vec2(1.0 / 6.0, 1.0 / 3.0);
@@ -118,33 +112,10 @@ float snoise(vec3 v) {
 }
 ///----
 
-float ringDistance(vec3 rayOrigin, vec3 rayDir, Ring ring) {
-  float denominator = dot(rayDir, ring.normal);
-  float constant = -dot(ring.center, ring.normal);
-  if (abs(denominator) < EPSILON) {
-    return -1.0;
-  } else {
-    float t = -(dot(rayOrigin, ring.normal) + constant) / denominator;
-    if (t < 0.0) {
-      return -1.0;
-    }
 
-    vec3 intersection = rayOrigin + t * rayDir;
-
-    // Compute distance to ring center
-    float d = length(intersection - ring.center);
-    if (d >= ring.innerRadius && d <= ring.outerRadius) {
-      return t;
-    }
-    return -1.0;
-  }
-}
-
-vec3 panoramaColor(sampler2D tex, vec3 dir) {
-  vec2 uv = vec2(0.5 - atan(dir.z, dir.x) / PI * 0.5, 0.5 - asin(dir.y) / PI);
-  return texture(tex, uv).rgb;
-}
-
+// Calculate the acceleration based on the gravitational lensing equation
+// acc = -1.5 * h2 * pos / r^5
+// https://flannelhead.github.io/posts/2016-03-06-photons-and-black-holes.html
 vec3 accel(float h2, vec3 pos) {
   float r2 = dot(pos, pos);
   float r5 = pow(r2, 2.5);
@@ -184,7 +155,6 @@ vec3 rotateVector(vec3 position, vec3 axis, float angle) {
   return vec3(qr.x, qr.y, qr.z);
 }
 
-#define IN_RANGE(x, a, b) (((x) > (a)) && ((x) < (b)))
 
 void cartesianToSpherical(in vec3 xyz, out float rho, out float phi,
                           out float theta) {
@@ -192,6 +162,7 @@ void cartesianToSpherical(in vec3 xyz, out float rho, out float phi,
   phi = asin(xyz.y / rho);
   theta = atan(xyz.z, xyz.x);
 }
+
 
 // Convert from Cartesian to spherical coord (rho, phi, theta)
 // https://en.wikipedia.org/wiki/Spherical_coordinate_system
@@ -202,49 +173,6 @@ vec3 toSpherical(vec3 p) {
   return vec3(rho, theta, phi);
 }
 
-vec3 toSpherical2(vec3 pos) {
-  vec3 radialCoords;
-  radialCoords.x = length(pos) * 1.5 + 0.55;
-  radialCoords.y = atan(-pos.x, -pos.z) * 1.5;
-  radialCoords.z = abs(pos.y);
-  return radialCoords;
-}
-
-void ringColor(vec3 rayOrigin, vec3 rayDir, Ring ring, inout float minDistance,
-               inout vec3 color) {
-  float distance = ringDistance(rayOrigin, normalize(rayDir), ring);
-  if (distance >= EPSILON && distance < minDistance &&
-      distance <= length(rayDir) + EPSILON) {
-    minDistance = distance;
-
-    vec3 intersection = rayOrigin + normalize(rayDir) * minDistance;
-    vec3 ringColor;
-
-    {
-      float dist = length(intersection);
-
-      float v = clamp((dist - ring.innerRadius) /
-                          (ring.outerRadius - ring.innerRadius),
-                      0.0, 1.0);
-
-      vec3 base = cross(ring.normal, vec3(0.0, 0.0, 1.0));
-      float angle = acos(dot(normalize(base), normalize(intersection)));
-      if (dot(cross(base, intersection), ring.normal) < 0.0)
-        angle = -angle;
-
-      float u = 0.5 - 0.5 * angle / PI;
-      // HACK
-      u += time * ring.rotateSpeed;
-
-      vec3 color = vec3(0.0, 0.5, 0.0);
-      // HACK
-      float alpha = 0.5;
-      ringColor = vec3(color);
-    }
-
-    color += ringColor;
-  }
-}
 
 mat3 lookAt(vec3 origin, vec3 target, float roll) {
   vec3 rr = vec3(sin(roll), cos(roll), 0.0);
@@ -255,7 +183,6 @@ mat3 lookAt(vec3 origin, vec3 target, float roll) {
   return mat3(uu, vv, ww);
 }
 
-float sqrLength(vec3 a) { return dot(a, a); }
 
 void adiskColor(vec3 pos, inout vec3 color, inout float alpha) {
   float innerRadius = 2.6;
@@ -290,11 +217,13 @@ void adiskColor(vec3 pos, inout vec3 color, inout float alpha) {
   density *= 1.0 / pow(sphericalCoord.x, adiskDensityH);
   density *= 16000.0;
 
+  // Returns green if particles disabled
   if (adiskParticle < 0.5) {
     color += vec3(0.0, 1.0, 0.0) * density * 0.02;
     return;
   }
 
+  // Add noise for more realistic accretion disk
   float noise = 1.0;
   for (int i = 0; i < int(adiskNoiseLOD); i++) {
     noise *= 0.5 * snoise(sphericalCoord * pow(i, 2) * adiskNoiseScale) + 0.5;
@@ -311,54 +240,45 @@ void adiskColor(vec3 pos, inout vec3 color, inout float alpha) {
   color += density * adiskLit * dustColor * alpha * abs(noise);
 }
 
+
 vec3 traceColor(vec3 pos, vec3 dir) {
-  vec3 color = vec3(0.0);
-  float alpha = 1.0;
+    vec3 color = vec3(0.0); // black
+    float alpha = 1.0;
 
-  float STEP_SIZE = 0.1;
-  dir *= STEP_SIZE;
+    float STEP_SIZE = 0.1;
+    dir *= STEP_SIZE;
 
-  // Initial values
-  vec3 h = cross(pos, dir);
-  float h2 = dot(h, h);
+    // Initial values
+    vec3 h = cross(pos, dir);
+    float h2 = dot(h, h);
 
-  for (int i = 0; i < 300; i++) {
-    if (renderBlackHole > 0.5) {
-      // If gravatational lensing is applied
-      if (gravatationalLensing > 0.5) {
-        vec3 acc = accel(h2, pos);
-        dir += acc;
-      }
+    // Ray Tracing Iterations, increase range to get more accurate results
+    for (int i = 0; i < 300; i++) {
+        if (renderBlackHole > 0.5) {
+            // If gravatational lensing is applied
+            if (gravatationalLensing > 0.5) {
+                vec3 acc = accel(h2, pos); // acceleration vector
+                dir += acc;
+            }
 
-      // Reach event horizon
-      if (dot(pos, pos) < 1.0) {
-        return color;
-      }
+            // Reach event horizon
+            if (dot(pos, pos) < 1.0) {
+                return color;
+            }
 
-      float minDistance = INFINITY;
-
-      if (false) {
-        Ring ring;
-        ring.center = vec3(0.0, 0.05, 0.0);
-        ring.normal = vec3(0.0, 1.0, 0.0);
-        ring.innerRadius = 2.0;
-        ring.outerRadius = 6.0;
-        ring.rotateSpeed = 0.08;
-        ringColor(pos, dir, ring, minDistance, color);
-      } else {
-        if (adiskEnabled > 0.5) {
-          adiskColor(pos, color, alpha);
+            if (adiskEnabled > 0.5) {
+              adiskColor(pos, color, alpha);
+            }
         }
-      }
+        pos += dir;
     }
 
-    pos += dir;
-  }
-
-  // Sample skybox color
-  dir = rotateVector(dir, vec3(0.0, 1.0, 0.0), time);
-  color += texture(galaxy, dir).rgb * alpha;
-  return color;
+    // Sample skybox color
+    if (renderSkybox > 0.5) {
+        dir = rotateVector(dir, vec3(0.0, 1.0, 0.0), time);
+        color += texture(galaxy, dir).rgb * alpha;
+        return color;
+    }
 }
 
 void main() {
