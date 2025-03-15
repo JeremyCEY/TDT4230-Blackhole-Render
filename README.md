@@ -28,7 +28,9 @@ brew install glfw3
 
 The following command is enough to generate a binary from the source code file:
 ```
-clang -o main main.cpp -I$(brew --prefix)/include -L$(brew --prefix)/lib -lglfw -framework OpenGL
+mkdir build
+cd build
+cmake .. -G "Xcode"
 ```
 
 **Note** that different from GNU/Linux distros, MacOS has OpenGL added as a framework.
@@ -38,11 +40,3 @@ clang -o main main.cpp -I$(brew --prefix)/include -L$(brew --prefix)/lib -lglfw 
 
 Running `main` should provide a result similar to the following:
 
-![Screenshot of main](screenshot_of_main.png)
-
-## Recommended reading
-Apart from the official documentation ([OpenGL.org](https://www.opengl.org/) and [Kronos](https://www.khronos.org/registry/OpenGL/)), I suggest the following:
-
- - https://learnopengl.com: As an old timer I was very surprised with the quality of this tutorial.
- - https://www.glfw.org/docs/latest/: It might be prudent to get somehow familiar with the basics of GLFW.
- - https://docs.gl/: OpenGL API documentation.
