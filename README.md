@@ -4,8 +4,6 @@ This project demonstrates a real-time blackhole rendering simulation using OpenG
 
 ![Blackhole Rendering Demo](/docs/recording.gif)
 
-This GIF demonstrates the real-time blackhole rendering in action, showcasing gravitational lensing, dynamic accretion disk effects, and customizable skyboxes.
-
 ## Features
 
 - **Realistic Blackhole Rendering**: Simulates gravitational lensing and event horizon effects using advanced ray tracing techniques.
