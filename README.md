@@ -6,7 +6,7 @@ This project demonstrates a real-time blackhole rendering simulation using OpenG
 
 ## Features
 
-- **Realistic Blackhole Rendering**: Simulates gravitational lensing and event horizon effects using advanced ray tracing techniques.
+- **Realistic Blackhole Rendering**: Simulates gravitational lensing and event horizon effects using ray marching techniques.
     - **Dynamic Accretion Disk Rendering**: Includes customizable density, height, and lighting for realistic visuals.
 - **Customizable Skyboxes**:
     - Explore multiple space environments with preloaded skyboxes, including nebulae and galaxies.

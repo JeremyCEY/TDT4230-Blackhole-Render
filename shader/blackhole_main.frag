@@ -254,7 +254,7 @@ vec3 traceColor(vec3 pos, vec3 dir) {
     vec3 h = cross(pos, dir);
     float h2 = dot(h, h);
 
-    // Ray Tracing Iterations, increase range to get more accurate results
+    // Ray Marching Iterations, increase range to get more accurate results
     for (int i = 0; i < 300; i++) {
         if (renderBlackHole > 0.5) {
             // If gravatational lensing is applied
