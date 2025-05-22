@@ -2,6 +2,9 @@
 
 This project demonstrates a real-time blackhole rendering simulation using OpenGL. It includes support for rendering with various skyboxes to create immersive environments inspired by interstellar visuals.
 
+Here is a similar implementation in Shadertoy:
+https://www.shadertoy.com/view/3cGGWz
+
 ![Blackhole Rendering Demo](/docs/recording.gif)
 
 ## Features
